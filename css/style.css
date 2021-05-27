@@ -117,6 +117,14 @@ body{
     .cont_count{
         width: 30%;
     }
+    .cont_card {
+        width: 50%;
+        padding: 1%;
+        height: auto;
+    }
+    .card{
+        width: 90%;
+    }
     .nav{
         width: 40%;
     }
@@ -137,9 +145,8 @@ body{
     }
 }
 @media screen and (max-width:690px){
-    .menu{
-        display: block;
-        color: white;
+    .nav_cont{
+        flex-direction: column;
     }
     .cont_count{
         width: 30%;
@@ -149,14 +156,19 @@ body{
         height: 15vh;
     }
     .nav{
-        width: 50%;
-        display: none;
+        width: 100%;
+        border-top: 1px solid lightblue;
+        padding: 2% 0;
     }
     .nav ul li button p{
-        font-size: 90%;
+        font-size: 100%;
     }
-    .menuBtn:hover .nav{
-        display: block;
+    .card h1{
+        font-size: 120%;
+    }
+    .content_count p{
+        flex-wrap: wrap;
+        font-size: 90%;
     }
 }
 @media screen and (max-width:660px){
@@ -167,31 +179,22 @@ body{
         width: 85%;
         height: 17.5vh;
     }
-    .nav{
-        width: 50%;
+    .cont_card{
+        width: 60%;
     }
-    .nav ul li button p{
-        font-size: 90%;
+    .card{
+        width: 100%;
     }
 }
 
 @media screen and (max-width:560px){
-    .nav{
-        width: 40%;
-    }
     .nav ul li button p{
-        font-size: 70%;
+        font-size: 100%;
     }
 }
 @media screen and (max-width:485px){
     .cont_count{
         width: 40%;
-    }
-    .nav{
-        width: 50%;
-    }
-    .nav ul li button p{
-        font-size: 70%;
     }
 }
 @media screen and (max-width:430px){
@@ -199,27 +202,14 @@ body{
         width: 90%;
         margin: 0 auto;
     }
-    .nav{
-        width: 55%;
-    }
     .count_flag{
         width: 50%;
         height: 25vh;
-    }
-    .cont
-    .nav ul li button p{
-        font-size: 70%;
     }
 }
 @media screen and (max-width:405px){
     .count_flag{
         width: 50%;
         height: 15vh;
-    }
-    .nav_cont div h1{
-        font-size: 70%;
-    }
-    .nav ul li button p{
-        font-size: 70%;
     }
 }
